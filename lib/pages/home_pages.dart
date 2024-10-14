@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../utils/my_tab.dart';
 
+
+//  Importar 5 tabs
+import '../tab/Burger_tab.dart';
+import '../tab/Pizza_tab.dart';
+import '../tab/donut_tab.dart';
+import '../tab/Smoothie_tab.dart';
+import '../tab/PanCake_tab.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -35,7 +43,8 @@ class _HomePageState extends State<HomePage> {
   ];
   @override
   Widget build(BuildContext context) {
-    return  DefaultTabController(
+    return  DefaultTabController(     
+      
       length: myTabs.length,
       child: Scaffold(
         appBar: AppBar(
@@ -68,6 +77,18 @@ class _HomePageState extends State<HomePage> {
           //Tab bar
           TabBar(tabs: myTabs),
           //Tab bar view
+          const 
+          Expanded(child: TabBarView(children: [
+            DonutTab(),
+            BurgerTab(),
+            SmoothieTab(),
+            PanCakeTab(),
+            PizzaTab()
+          ]
+
+          )
+          
+          )
       
           //Total de carrito
         ],),
