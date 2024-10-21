@@ -23,22 +23,27 @@ class _HomePageState extends State<HomePage> {
     //donut tab
     const MyTab(
       iconPath: "lib/icons/donut.png",
+      label: "Dona",
       ),
     //burger tab
     const MyTab(
       iconPath: "lib/icons/burger.png",
+      label: "Burger",
       ),
     //smoothie tab
     const MyTab(
       iconPath: "lib/icons/smoothie.png",
+      label: "Smoothie",
       ),
     //pancakes tab
     const MyTab(
       iconPath: "lib/icons/pancakes.png",
+      label: "Pancakes",
       ),
     //pizza tab
     const MyTab(
       iconPath: "lib/icons/pizza.png",
+      label: "Pizza",
       ),
   ];
   @override
